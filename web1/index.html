@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCUT TOPIC TEST WEB</title>
+    <style>
+        /* 全局樣式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #000000, #000000);
+            color: #000;
+            transition: background 0.3s ease;
+        }
+
+        /* 頁面容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 asuto;
+            padding: 20px;
+        }
+
+        /* 頁首 */
+        header {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        /* 標題文字 */
+        header h1 {
+            font-size: 2.5rem;
+            color: #FFFF; /* 白色作為主要對比色 */
+            margin: 0;
+            font-weight: 300;
+        }
+
+        /* 導航欄 */
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4ECDC4; /* 青綠色作為次要對比色 */
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 8px;
+        }
+
+        nav a:hover {
+            background: rgba(78, 205, 196, 0.1);
+            color: #fff;
+        }
+
+        /* 文章區域 */
+        .article {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            margin: 40px 0;
+        }
+
+        .article-title {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: #FFE66D; /* 使用主要對比色 */
+            font-weight: 600;
+        }
+
+        .article-meta {
+            font-size: 0.95rem;
+            color: #888;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        /* 版權區域 */
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: #888;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #4ECDC4; /* 使用次要對比色 */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* 特殊強調文字 */
+        .highlight {
+            color: #FFE66D; /* 第三對比色：黃色 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NCUT TOPIC TEST WEB</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard/dashboard.html">Dashboard</a>
+            <a href="about/about.html">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="article">
+            <h2 class="article-title">Update Log</h2>
+            <div class="article-meta">Published on October 6, 2024 | by Harry Hung</div>
+            <p class="article-content">
+                1.Add index.html<br>
+                2.Add Dashboard.html<br>
+                3.Add About.html
+            </p>
+                
+        </div>
+    </div>
+
+    </div>
+    <footer>
+        <p>NCUT IM Harry Hung </p>
+    </footer>
+
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            // 使用深灰色調
+            const color1 = `rgb(${44 + x * 10}, ${44 + x * 10}, ${44 + x * 10})`;
+            const color2 = `rgb(${26 + y * 10}, ${26 + y * 10}, ${26 + y * 10})`;
+            
+            document.body.style.background = `linear-gradient(135deg, ${color1}, ${color2})`;
+        });
+    </script>
+</body>
+</html>
